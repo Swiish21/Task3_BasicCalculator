@@ -1,7 +1,14 @@
 # Task3_BasicCalculator
 The challenge was to create a calculator program that takes in an operator and two integers and does the respective math operation based on the presented input.
 
-We begin the program by creating a class to house our calculator program. In the class we define a function called calculate that has 3 parameters, two integer parameters and a string parameter for the operator. For the calculator program we'll use a switch statement which based on the operator input will switch to the respective case. Once it switches to the case we pass the 2 integer parameters to do the math opration. But also we added an error for division by zero and when we have a case where we have an invalid operator.
+Basic Calculator, We begin by creating a class 'calculator', we define an int function 'calculate', this function has 3 parameters, two integers 'num1' and 'num2' and a string 'operator', these two integers will be used to pass the integers to be implemented in the math operation, whereas the 'operator' string is used to pass the operator which selects which math operation to be done, for the main body of the algorithm we'll use a switch operator, the switch operator will switch to the specified math operation based on it's argument 'operator'. The first case of the switch is '+' which will perform an sum operation of the two numbers ('num1' and 'num2'), this will be the same case for the other operators (-,/,*). But what if we have a case where the user decides to divide by zero, in the divide case we throw an error where 'num2' is 0, but also added in more functionality, what if the user input an invalid operator, we use the default function to throw another error to show the user an unsupported error. We finish by defining a variable to hold the result of the algorithm and present test cases for the various operators and errors in place and print the result.
 
-we finish by presenting test cases with different operators and error cases minorfor the function, to test it's functionality.
-We print all the respective tests to complete the program.
+Problems Solved:
+1. Create a basic calculator that takes in an operator and two integers and does the respective math operation.
+
+2. Error handling for division by zero.
+
+3. Error handling for an invalid operator(not in the test, but felt important)
+
+Problem Not Solved:
+1. Extend the function to handle multi-step operations, extending the function to handle these kind of operations led to a rise in new problems that rendered the whole program unfunctional, hence the choice not to include it.
